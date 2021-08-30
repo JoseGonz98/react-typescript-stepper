@@ -1,4 +1,5 @@
 import React,{useState,useRef} from 'react'
+import {useDispatch,useSelector} from 'react-redux'
 import Donut from '../Donut/Donut'
 import './StepperForm.scss';
 import Step1 from './Steps/Step1';
@@ -7,6 +8,8 @@ import Step3 from './Steps/Step3';
 
 
 const StepperForm =()=>{ 
+
+    const StepReducer = useSelector((state:any)=>state.StepReducer)
 
     const [step,setStep]= useState(0)
 
@@ -20,6 +23,7 @@ const StepperForm =()=>{
         step===0 ?window.location.href=('https://www.google.com'):setStep(step -1)
     } 
     
+    console.log(StepReducer)
 
     return(
         <>
