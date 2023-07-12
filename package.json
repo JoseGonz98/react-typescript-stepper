@@ -1,7 +1,9 @@
 {
-  "name": "react-typescript-stepper",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@JoseGonz98/react-typescript-stepper",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/JoseGonz98"
+  },
+  "version": "0.1.2",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
